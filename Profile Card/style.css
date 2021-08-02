@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(120deg, #f46b45, #eea849);
+}
+.title{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.title h1{
+    color: #fff;
+    font-size: 25px;
+}
+.contents{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.person{
+    width: 260px;
+    height: 360px;
+    background: #f6f9fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.profile{
+    width: 170px;
+    height: 170px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgb(50 50 93 / 10%);
+    border-radius: 50%;
+}
+.image{
+    width: 150px;
+    height: 150px;
+    background: url(./images/vathouse.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.name-job{
+    padding: .5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.name-job h1{
+    font-size: 20px;
+    color: #777;
+}
+.name-job p{
+    font-size: 16px;
+    color: #777;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.btn button{
+    width: 120px;
+    height: 35px;
+    border: none;
+    outline: none;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.btn #follow{
+    background: #777;
+    color: #fff;
+}
+.btn #message{
+    background: none;
+    border: 0.15em solid #777;
+    color: #777;
+}
+.infos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.posts, .likes, .followers{
+    width: 120px;
+    height: 120px;
+    background: #ffe8c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #777;
+}
+.posts h1, .likes h1, .followers h1{
+    font-size: 20px;
+}
+.posts p, .likes p, .followers p{
+    font-size: 16px;
+}
+.posts, .likes{
+    border-bottom: 0.1em solid #fff;
+}
+/* box-shadow: 0 2px 4px rgb(50 50 93 / 10%);
+background: #f6f9fc; */
+@media (max-width: 500px) {
+    .contents{
+        padding: 0 1em;
+    }
+    .card{
+        flex-direction: column;
+        width: 100%;
+    }
+    .person{
+        width: 100%;
+    }
+    .infos{
+        width: 100%;
+        flex-direction: row;
+    }
+    .posts, .likes, .followers{
+        width: 33.33%;
+    }
+    .posts, .likes{
+        border-bottom: 0;
+        border-right: 0.1em solid #fff;
+    }
+}
